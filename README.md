@@ -8,14 +8,17 @@ ${H(z) = \frac{\frac{1-a_2}{2} - \frac{1-a_2}{2} z^{-2}}{1 - (a_2+1)\cos(\omega_
 Необходимо определить значения коэффициентов $\omega_0, a_2$, при которых наилучшим образом выполняется фильтрация зашумленного кода Морзе.
 
 ## Предлагаемое решение
+
+Расчеты приведены в блокноте [notebook.ipynb](notebook.ipynb)
+
 ### В исходном зашумленном сигнале выделяем трендовую составляющую
 Применен кратномасштабный анализ с использованием вейвлетов Coiflets (Coif 17). Разложение до 2-го уровня. Флуктуационная составляющая обнулена.
 
-<img src='readme_img/signals_origin_wavelet.png' alt='Figure 4.2' style='width:70%; height:auto;'>
+<img src='readme_img/signals_origin_wavelet.png' alt='Figure 4.2' style='width:100%; height:auto;'>
 
 ### Вычислен амплитудный спектр трендовой составляющей
 
-<img src='readme_img/spectrum_origin_wavelet.png' alt='Figure 4.2' style='width:70%; height:auto;'>
+<img src='readme_img/spectrum_origin_wavelet.png' alt='Figure 4.2' style='width:100%; height:auto;'>
 
 Полученный спектр принят в качестве эталона.
 
@@ -23,13 +26,13 @@ ${H(z) = \frac{\frac{1-a_2}{2} - \frac{1-a_2}{2} z^{-2}}{1 - (a_2+1)\cos(\omega_
 
 Частотная характеристика фильтра с оптимальными параметрами
 
-<img src='readme_img/filter_freq_resp.png' alt='Figure 4.2' style='width:70%; height:auto;'>
+<img src='readme_img/filter_freq_resp.png' alt='Figure 4.2' style='width:100%; height:auto;'>
 
 ### Фильтр применен к исходному зашумленному сигналу.
 
-<img src='readme_img/signal_filtered.png' alt='Figure 4.2' style='width:70%; height:auto;'>
+<img src='readme_img/signal_filtered.png' alt='Figure 4.2' style='width:100%; height:auto;'>
 
-<img src='readme_img/spectrum_filtered.png' alt='Figure 4.2' style='width:70%; height:auto;'>
+<img src='readme_img/spectrum_filtered.png' alt='Figure 4.2' style='width:100%; height:auto;'>
 
 ## Ответ
 Сигнал соответствует цифре 7.
