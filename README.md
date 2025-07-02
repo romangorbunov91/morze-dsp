@@ -3,7 +3,9 @@
 ## Постановка задачи
 Задан полосовой фильтр 2-го порядка с передаточной функцией
 
-${H(z) = \frac{\frac{1-a_2}{2} - \frac{1-a_2}{2} z^{-2}}{1 - (a_2+1)\cos(\omega_0)z^{-1} + a_2 z^{-2}}}$
+$$\begin{equation}
+    {H(z) = \frac{\frac{1-a_2}{2} - \frac{1-a_2}{2} z^{-2}}{1 - (a_2+1)\cos(\omega_0)z^{-1} + a_2 z^{-2}}}.
+\end{equation}$$
 
 Необходимо определить значения коэффициентов $\omega_0, a_2$, при которых наилучшим образом выполняется фильтрация зашумленного кода Морзе.
 
@@ -18,7 +20,7 @@ $$ \begin{equation}
     f = f_{0} \pm \Delta f,
 \end{equation} $$
 
-где частоте ${f_0}$ соответствует $n=99$, а ${\Delta f}$ - ${\Delta n = 60}$
+где частоте ${f_0}$ соответствует $n=99$, а ${\Delta f} \rightarrow {\Delta n = 60}$
 
 <img src='readme_img/spectrum_cut.png' alt='Figure 4.2' style='width:100%; height:auto;'>
 
