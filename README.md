@@ -17,7 +17,7 @@ $$\begin{equation}
 Обнулены коэффициенты разложения за пределами окрестности
 
 $$ \begin{equation}
-    f = f_{0} \pm \Delta f,
+    f = f_{0} \pm \Delta f/2,
 \end{equation} $$
 
 где частоте ${f_0}$ соответствует $n=99$, а ${\Delta f} \rightarrow {\Delta n = 60}$
